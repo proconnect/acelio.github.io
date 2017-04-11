@@ -23,8 +23,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;   
-}   
-        
+}    
+         
 a { 	
 	color:#7f7f7f; 
 	text-decoration: none;  
@@ -866,6 +866,10 @@ header img{
 }
 
 @media screen and (max-width: 880px){
+section{
+	/*border:2px solid #000;*/
+}
+
 .container > header > span,
 .container > header h1 { 
 	text-align: center;
@@ -879,9 +883,98 @@ header img{
 	text-indent: 30px;
 }
 
+#bio{
+	height:100vh !important;
 }
 
-@media screen and (max-width: 658px) {
+#resume button{
+	position: absolute;
+	margin-top: -16% !important;
+	margin-left: -34% !important;	
+}
+
+#process button{
+	position: absolute;
+	margin-top: -16% !important;
+	margin-left: 	0% !important;	
+}
+
+#ccf article{
+	height:40vh !important;
+	margin-top: 20% !important;
+	text-align: center !important;	
+}
+
+#ccf article h1{
+	margin-top:-15% !important;
+}
+
+#ccf p, #ccf p:active, #ccf .show{
+	margin-top:-32% !important;
+	padding:0;
+}
+
+#ccf figure img{
+	margin-top:40% !important;
+	margin-left:10% !important;
+	width:90% !important;	
+}
+
+#el3phant article{
+	height:33vh !important;
+	margin-top: 20% !important;
+	text-align: center !important;	
+}
+
+#el3phant article h1{
+	margin-top:-15% !important;
+}
+
+#el3phant p, #el3phant p:active, #el3phant .show{
+	margin-top:-40% !important;
+	padding:0;
+}
+
+#el3phant figure img{
+	margin-top:20% !important;
+	width:100% !important;	
+}
+
+#fou figure{
+	margin-top:20% !important;	
+	height:80vh !important;	
+}
+
+#fou figure img{	
+	position: relative;
+	margin-top:25% !important;
+	width:80% !important;		
+	z-index: 500;	
+}
+
+#spotx article{
+	margin-top:5% !important;
+}
+
+#spotx figure{
+	margin-top:15% !important;
+}
+
+#spotx figure img{
+	margin-top:40% !important;
+}
+
+#wb figure img{
+	margin-top:45% !important;
+}
+
+}
+
+@media screen and (max-width: 614px) {
+section{
+	/*border:solid red;*/
+}
+
 .nav #hamburger{
 	position: relative;
 	display: block;
@@ -890,7 +983,6 @@ header img{
 	margin-top:0 !important;	
 	height:40px !important;	
 	border:2px solid #ffac00;
-
 }
 
 .nav ul{
@@ -907,14 +999,14 @@ header img{
 header img{  
 	position: relative;		
 	width:75%;
-	margin-top:48% !important;	
+	margin-top:28% !important;	
 	margin-left: 14% !important;		
 }
 
 #circle{
 	position: relative;	
 	margin-left:-5% !important;
-	width:30% !important;
+	width:30% !important;	
 }
 
 #bio article{
@@ -930,9 +1022,9 @@ header img{
 }
 
 #resume button{
-	position: absolute;
+	position: relative;
 	margin-top: -16% !important;
-	margin-left: -65% !important;	
+	margin-left: -64% !important;	
 }
 
 #bio figure{
@@ -950,11 +1042,11 @@ header img{
 #process button{
 	position: absolute;
 	margin-top: -16% !important;
-	margin-left: 31% !important;	
+	margin-left: 28% !important;	
 }
 
 #ccf article{
-	height:33vh !important;
+	height:40vh !important;
 	margin-top: 20% !important;
 	text-align: center !important;	
 }
@@ -963,8 +1055,8 @@ header img{
 	margin-top:-15% !important;
 }
 
-#ccf p, #ccf p:active, #ccf .show,
-#ccf figure{
+#ccf p, #ccf p:active, #ccf .show{
+	margin-top:-32% !important;
 	padding:0;
 }
 
@@ -977,12 +1069,12 @@ header img{
 #dogs article{
 	position: absolute;
 	height:50vh !important;
-	margin-top: -120% !important;
+	margin-top: -140% !important;
 	text-align: center !important;	
 }
 
 #dogs article h1{
-	margin-top:-20% !important;
+	margin-top:-15% !important;
 }
 
 #dogs article h2{
@@ -993,8 +1085,7 @@ header img{
 	z-index: 1000;
 }
 
-#dogs p, #dogs p:active, #dogs .show,
-#dogs figure{
+#dogs p, #dogs p:active, #dogs .show{
 	position: relative;
 	margin-top:-40% !important;
 	padding:0;
@@ -1004,8 +1095,7 @@ header img{
 	position: relative;
 	margin-top:90% !important;
 	width:80% !important;		
-	z-index: 500;
-	/*opacity: 0;*/
+	z-index: 500;	
 }
 
 #el3phant article{
@@ -1018,8 +1108,8 @@ header img{
 	margin-top:-15% !important;
 }
 
-#el3phant p, #el3phant p:active, #el3phant .show,
-#el3phant figure{
+#el3phant p, #el3phant p:active, #el3phant .show{
+	margin-top:-40% !important;
 	padding:0;
 }
 
@@ -1029,55 +1119,53 @@ header img{
 }
 
 #fou article{
-	position: absolute;
-	height:55vh !important;
-	margin-top: -145% !important;
-	text-align: center !important;		
+	position: relative;
+	height:75vh !important;
+	margin-top: -155% !important;
+	text-align: center !important;	
 }
 
 #fou  article h1{
-	margin-top:-20% !important;
+	margin-top:-35% !important;
 }
 
 #fou  article h2{
-	margin-top:-35% !important;
+	margin-top:-30% !important;
 }
 
 #fou  .hide{
 	z-index: 1000;
 }
 
-#fou  p, #fou  p:active, #fou  .show,
-#fou  figure{
+#fou  p, #fou  p:active, #fou  .show{
 	position: relative;
 	margin-top:-40% !important;
 	padding:0;
 }
 
 #fou figure{
-	margin-top:20% !important;	
-	height:80vh !important;	
+	margin-top:5% !important;		
 }
 
 #fou figure img{	
 	position: relative;
-	margin-top:55% !important;
+	margin-top:95% !important;
 	width:80% !important;		
 	z-index: 500;	
 }
 
 #spotx article{
-	height:33vh !important;
+	height:40vh !important;
 	margin-top: -10% !important;
 	text-align: center !important;
-	}
-
-#spotx article h1{
-	margin-top:-15% !important;
 }
 
-#spotx p, #spotx p:active, #spotx .show,
-#spotx figure{
+#spotx article h1{
+	margin-top:10% !important;	
+}
+
+#spotx p, #spotx p:active, #spotx .show{
+	margin-top:-40% !important;
 	padding:0;
 }
 
@@ -1090,12 +1178,12 @@ header img{
 #wb article{
 	position: absolute;
 	height:50vh !important;
-	margin-top: -120% !important;
+	margin-top: -130% !important;
 	text-align: center !important;		
 }
 
 #wb  article h1{
-	margin-top:-20% !important;
+	margin-top:-25% !important;
 }
 
 #wb article h2{
@@ -1109,7 +1197,7 @@ header img{
 #wb p, #wb p:active, #wb .show,
 #wb figure{
 	position: relative;
-	margin-top:-28% !important;
+	margin-top:-29% !important;
 	padding:0;
 }
 
@@ -1120,6 +1208,16 @@ header img{
 	float: left;
 	width:80% !important;		
 	z-index: 500;	
+}
+
+#wb h1 span{
+	height:40vh !important;
+	display:none;
+}
+
+#wb h1 strong{
+	position: absolute;	
+	margin-top:-10px !important;	
 }
 
 .cbp-so-side {
@@ -1133,7 +1231,11 @@ header img{
 
 }
 
-@media screen and (max-width: 410px){
+@media screen and (max-width: 686px) {
+nav{	
+	padding-top: 14% !important;	
+}
+
 header img{  
 	position: relative;	
 	margin-top:10% !important;	
@@ -1145,10 +1247,179 @@ nav{
 }
 
 #circle{
+	position:relative;
+	margin-top: -10% !important;	
+	margin-left:25% !important;
+	width:80% !important;		
+}
+
+#resume button{
+	position: absolute;
+	margin-top: -16% !important;
+	/*margin-left: -74% !important;	*/
+}
+
+#process button{
+	position: absolute;
+	margin-top: -16% !important;
+	/*margin-left: 38% !important;	*/
+}
+
+#ccf article{
+	height:35vh !important;
+	margin-top: 20% !important;
+	text-align: center !important;	
+}
+
+#ccf article h1{
+	margin-top:-12% !important;
+}
+
+#ccf figure img{
+	margin-top:-20% !important;
+	margin-left:0% !important;
+	width:100% !important;	
+}
+
+#dogs article h1{	
+	/*border:2px solid #ffac00;*/ /* ########## empasis repeat */
+	margin-top:-10% !important;
+}
+
+#dogs article h2{	
+	margin-top:-20% !important;
+	/*border:2px solid blue;*/  /* ########## empasis repeat */
+}
+
+#dogs article{
+	position: absolute;
+	height:80vh !important;	
+	margin-top: -160% !important;
+	text-align: center !important;	
+	/*border:2px solid #000;*/ /* ########## empasis repeat */
+}
+
+#dogs figure img{	
 	position: relative;	
+	width:100% !important;		
+	z-index: 500;		
+}
+
+#el3phant article {
+	height:10vh !important;
+	margin-top:40% !important;
+}
+
+#el3phant article h2{
+	margin-top:-30% !important;
+}
+
+#el3phant p, #el3phant p:active, #el3phant .show{
+	position: relative;
+	margin-top:-41% !important;
+	padding:0;
+}
+
+#el3phant figure img{
+	margin-top: -10% !important;	
+	width:100% !important;
+}
+
+#fou article{	
+	margin-top:-150% !important;
+	height: 50vh !important;	
+}
+
+#fou article h1{
+	margin-top:-19% !important;
+}
+
+#fou figure{
+	height:90vh !important;	
+}
+
+#fou figure img{
+	position: relative;
+	width:100% !important;
+	margin-top:65% !important;	
+}
+
+#spotx article{
+	margin-top:0 !important;
+	height:45vh !important;	
+}
+
+#spotx figure img{
+	margin-left:0.5% !important;
+	width:100% !important;
+	margin-top:-15% !important;
+}
+
+#wb article{
+	height:40vh !important;
+	margin-top:-122% !important;
+}
+
+#wb article h1{
+	margin-top:-18% !important;
+}
+
+#wb article h1 strong{
+	display: none;
+}
+
+#wb article h2{
+	margin-top:-30% !important;
+}
+
+#wb h1 span{
+	height:40vh !important;
+	display:none;
+}
+
+#wb article .show{
+	position: relative;
+	/*margin-top:-20% !important;             */
+}
+
+#wb figure{
+	margin-top:50% !important;
+}
+
+#wb figure img{
+	margin-top:40% !important;
+}
+
+}
+
+/* ### Samsung #### */
+
+@media screen and (max-width: 360px){
+section{
+	border:2px solid blue;
+}
+
+nav{	
+	padding-top: 14% !important;	
+}
+
+#circle{
+	position:relative;
 	float: left;	
-	margin-top: -10% !important;
+	margin-top: -10% !important;	
+	margin-left:22% !important;
 	width:60% !important;	
+	/*border:2px solid #ffac00;*/
+}
+
+header img{  
+	position: relative;	
+	margin-top:10% !important;	
+	margin-left: 14% !important;		
+}
+
+nav{	
+	padding-top: 20% !important;	
 }
 
 #resume button{
@@ -1230,6 +1501,131 @@ nav{
 #wb article{
 	height:60vh !important;
 	margin-top:-132% !important;
+}
+
+#wb article h1{
+	margin-top:-23% !important;
+}
+
+#wb h1 span{
+	height:40vh !important;
+	display:none;
+}
+
+#wb h1 strong{
+	position: absolute;	
+	margin-top:-10px !important;	
+}
+
+#wb article .show{
+	position: relative;
+	margin-top:-20% !important;
+}
+
+#wb figure{
+	margin-top:50% !important;
+}
+
+#wb figure img{
+	margin-top:30% !important;
+}
+
+}
+
+@media screen and (max-width: 320px){
+section{
+	border:2px solid green;
+}
+
+nav{	
+	padding-top: 14% !important;	
+}
+
+#circle{
+	width:100% !important;	
+}
+
+#resume button{	
+	margin-left: -50% !important;	
+}
+
+#process button{
+	margin-left: 18% !important;	
+}
+
+#ccf figure img{	
+	width:100% !important;	
+}
+
+#dogs article{
+	position: absolute;
+	height:60vh !important;
+	margin-top: -140% !important;
+	text-align: center !important;	
+}
+
+#dogs article h1{
+	margin-top:-40% !important;
+}
+
+#dogs figure img{	
+	position: relative;
+	margin-top:120% !important;
+	width:80% !important;		
+	z-index: 500;	
+}
+
+#fou{	
+	height:100vh !important;	
+}
+
+#fou article{	
+	margin-top:-160% !important;
+	height: 50vh !important;	
+}
+
+#fou article h1{	
+	margin-top:-55% !important;	
+}
+
+#fou .show{
+	margin-top:-50% !important;	
+}
+
+#fou figure{
+	position: relative;
+	margin-top:-10% !important;
+	height:95vh !important;	
+}
+
+#fou figure img{
+	width:100% !important;
+	position: relative;
+	margin-top:85% !important;	
+}
+
+#wb article{
+	height:60vh !important;
+	margin-top:-132% !important;
+}
+
+#wb article h1{
+	margin-top:-30% !important;
+}
+
+#wb h1 span{
+	height:40vh !important;
+	display:none;
+}
+
+#wb h1 strong{
+	position: absolute;	
+	margin-top:-10px !important;	
+}
+
+#wb article .show{
+	position: relative;
+	margin-top:-20% !important;
 }
 
 #wb figure{
