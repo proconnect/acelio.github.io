@@ -18,14 +18,12 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-/* Author Ace Lio 2017 */
-
-body {
+body { 
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;   
-}    
-         
-a { 	
+}   
+          
+a { 	  
 	color:#7f7f7f; 
 	text-decoration: none;  
 }   
@@ -41,7 +39,7 @@ br{
 .container{	
 	margin-top:-12px !important;
 }
- 
+  
 .container > header {	
 	position: relative;
 	width: 100%;	
@@ -66,7 +64,7 @@ br{
 header img{  
 	position: relative;		
 	width:20%;
-	margin-top:15% !important;
+	margin-top:20% !important;
 	margin-left: 40% !important;	
 }
  
@@ -80,7 +78,7 @@ header nav{
 
 #circle{
 	position: relative;
-	margin: 5% auto !important;		
+	margin: 30% auto !important;		
 }
 
 /* Sticky Nav */
@@ -89,6 +87,10 @@ header nav{
 	z-index: 5000;
 	margin: 100vh 0 40px 0;	
 	text-align: center;	
+}
+
+.placeholder{
+	/*margin: 100vh 0 40px 0;*/
 }
 
 .fixed{
@@ -158,37 +160,62 @@ strong{
 	font-weight:bold;
 }
 
+article h2{
+	z-index: -5;
+}
+
+article p .hide{
+	display: none;
+}
+
 #ccf figure{
 	margin-top:4% !important;	
-	/*border:2px solid #000;*/
 }
 
 #ccf figure img{
-	position: relative;
-	margin-top:37% !important;		
+	position: relative;	
+	max-width:1920px;
+	max-height:900px;
+	width:50% !important;
+	margin-top:40% !important;		
 }
 
-#ccf article{
+#ccf article{		
 	margin-top:8%;	
-	height:auto !important;	
+	height:70vh !important;		
 }
 
-#ccf article img{
-	border:2px solid #fff;
-}
-
-#ccf h2{
-	margin-top: -30%;		
-}
-
-#ccf p{
+#ccf p, #ccf p:active, #ccf .show{
+	margin:-34% auto;		
+	height:500px !important;	
+	font-size:1.2em;	
 	color: #7f7f7f;
+	width:60%;
+	float: right;
+	padding:0 1% 0 0 !important;	
+}
+
+#ccf article h2{	
+	margin-top: -30% !important;			
 }
 
 #dogs article {
 	margin-top:9%;
 	position: relative;		
 }
+
+#dogs p, #dogs p:active, #dogs .show{
+	margin:-33% auto;		
+	height:500px !important;	
+	font-size:1.2em;
+	width:60%;
+	float: left;	
+}
+
+#dogs article h2{
+	margin-top: -30% !important;
+}
+
 
 #dogs figure{
 	margin-top:5%;
@@ -197,6 +224,7 @@ strong{
 
 #dogs figure img{
 	margin-top:35% !important;
+	width:100%;
 	position: relative;	
 }
 
@@ -209,22 +237,28 @@ strong{
 	margin-top:8%;		
 }
 
-#el3phant figure img{
-	position: relative;
-	margin-top:27% !important;		
+#el3phant figure img{ 
+	margin-top:28% !important;
+	width:60% !important;	
 }
 
 #el3phant article{
 	margin-top:12%;		
 }
 
-#el3phant h2{
-	margin-top: -30%;		
-	z-index: -50;
+#el3phant p, #el3phant p:active, #el3phant .show{
+	margin:-33% auto;		
+	height:500px !important;	
+	font-size:1.2em;
+	color: #7f7f7f;
+	width:60%;
+	float: right;
+	padding:0 1% 0 0 !important;		
 }
 
-#el3phant p{
-	color: #7f7f7f;
+#el3phant h2{
+	margin-top: -30% !important;		
+	z-index: -50;
 }
 
 #fou figure{ 
@@ -236,21 +270,17 @@ strong{
 	height:70vh !important;
 }
 
-#fou p{	
-	color:#fff !important;
-}
-
-#fou .hide{
-	position: relative;
-	margin-top:-82% !important;		
-	overflow: hidden;
+#fou article h2{
+	margin-top: -30% !important;	
 }
 
 #fou p, #fou p:active, #fou .show{
-	margin:-31% auto;		
+	margin:-33% auto;		
 	height:500px !important;	
 	font-size:1.2em;
-	padding:0 22% 0 0%;	
+	color:#fff !important;
+	width:60%;
+	float: left;	
 }
 
 #spotx figure{ 
@@ -266,27 +296,27 @@ strong{
 	color:#7f7f7f !important;
 }
 
-#spotx .hide{
-	position: relative;
-	margin-top:-84% !important;		
-	overflow: hidden;
-}
-
 #spotx p, #spotx p:active, #spotx .show{
-	margin:-31% auto;		
+	margin:-33% auto;		
 	height:500px !important;	
 	font-size:1.2em;
-	padding:0 0 0 22%;	
+	width:60%;
+	float: right;
+	padding:0 1% 0 0 !important;
 }
 
 #spotx figure img{
 	position: relative;
-	margin-top:30% !important;	
+	margin-top:33% !important;	
 } 
 
 #spotx article h1{
 	position: relative;
 	margin-top:55% !important;
+}
+
+#spotx article h2{
+	margin-top: -30% !important;
 }
 
 #wb figure{ 
@@ -302,14 +332,8 @@ strong{
 	color:#fff !important;
 }
 
-#wb .hide{
-	position: relative;
-	margin-top:-86% !important;		
-	overflow: hidden;
-}
-
 #wb p, #wb p:active, #wb .show{
-	margin:-31% auto;		
+	margin:-28% auto;		
 	height:500px !important;	
 	font-size:1.2em;
 	padding:0 22% 0 0;	
@@ -328,6 +352,46 @@ strong{
 #wb figure img{
 	position: relative;
 	margin-top:25% !important;
+	width:50% !important;
+}
+
+
+
+
+#contact figure{ 
+	margin-top:7% !important;	
+}
+
+#contact article{
+	margin-top:-2% !important;	
+	height:90vh !important;
+}
+
+#contact p{	
+	color:#7f7f7f !important;
+}
+
+#contact p, #contactx p:active, #contact .show{
+	margin:-33% auto;		
+	height:500px !important;	
+	font-size:1.2em;
+	width:60%;
+	float: right;
+	padding:0 1% 0 0 !important;
+}
+
+#contact figure img{
+	position: relative;
+	margin-top:33% !important;	
+} 
+
+#contact article h1{
+	position: relative;
+	margin-top:55% !important;
+}
+
+#contact article h2{
+	margin-top: -30% !important;
 }
  
 h3 {
@@ -345,44 +409,8 @@ p{
 	margin:-20% auto;
 }
 
-#ccf .hide{
-	position: relative;
-	margin-top:-84% !important;	
-	display: none;
-	overflow: hidden;
-}
-
-#ccf p, #ccf p:active, #ccf .show{
-	margin:-30% auto;		
-	height:500px !important;	
-	font-size:1.2em;
-	padding:0 0 0 22%;	
-}
-
-#dogs .hide{
-	position: relative;
-	overflow: hidden;
-	margin-top:-83% !important;		
-}
-
-#dogs p, #dogs p:active, #dogs .show{
-	margin:-31% auto;		
-	height:500px !important;	
-	font-size:1.2em;
-	padding:0 22% 0 0%;	
-}
-
-#el3phant .hide{
-	position: relative;
-	margin-top:-86% !important;	
-	overflow: hidden;	
-}
-
-#el3phant p, #el3phant p:active, #el3phant .show{
-	margin:-31% auto;		
-	height:500px !important;	
-	font-size:1.2em;
-	padding:0 0 0 22%;		
+#dogs article p button{
+	background-color: #ffac00;
 }
 
 .readmore{
@@ -471,14 +499,24 @@ nav svg{
 	float: left;
 }
 
+/* Bio */
+#bio article{
+	z-index: 50;
+}
+
+#bio figure{
+	z-index: 50;
+}
+
 #bio article h2{
 	position: relative;
-	margin-top: 55% !important;	
+	margin-top: 60% !important;	
 	height:30px;
 	color:#a72b63; 	
 	cursor:pointer;	
 }
 
+/* Blog */
 #bio figure h2{
 	position: relative;
 	margin-top: 55% !important;	
@@ -488,23 +526,31 @@ nav svg{
 	cursor:pointer;	
 }
 
-li button{	
-	z-index: 5000;
-}
-
-/* added div to stop nav buttons from jumping */
-.aboutContainer{
+/* Process */ 
+.thumbL ul li{	
 	position: relative;	
-	margin-top:-10%;	
-	height:1%;
-	border:2px solid transparent;	
+	float: left;
+	margin-top:-40% !important;
+ }
+
+ /* Resume*/
+.thumbR ul li{	
+ 	position: relative;	
+ 	margin-top:-30% !important;
+	float: right;
+ }
+
+/* about me 2x buttons (left) */
+#resume{		
+	float: right;		
 }
 
-#thumbnails ul li{	
-	margin-top:5%;
-	float: left; 
-  	margin-right: 26px; 
- }
+/* blog button (right) */
+#process{	
+	margin-top:-40% !important;	
+	margin-left: -30% !important;
+	float: left;	
+}
 
 #bio{
 	position: relative;
@@ -518,22 +564,18 @@ li button{
 	border-radius: 10px;	
 }
 
-#bio {
-	position: relative;	
-}
-
 #bio article {
 	position: relative;
 	margin-top:2% !important;
 	float: left;
 	width:50% !important;	
-	height:auto !important;
+	height:auto !important;	
 }
 
 #bio article p{
-	position: relative;
-	margin-top:-13% !important	;
-	padding-bottom:32%;
+	position: relative;	
+	margin-top:-21% !important	;
+	padding-bottom:32%;	
 }
 
 #bio figure{
@@ -542,25 +584,10 @@ li button{
 	height:auto !important;
 }
 
-#bio figure h2{
+#bio figure p{ 
 	position: relative;	
-	margin-top: 50% !important;
-}
-
-#bio figure p{
-	position: relative;
-	margin-top:-13% !important;
-	padding-bottom:32%;
-}
-
-/* Controls all 3x BIO buttons together */
-#thumbnails ul{
-	position: relative;	
-	margin-left:80% !important;
-	margin-top:-22% !important;		
-	height: 80px;	
-	width:205% !important;	
-	padding: 0;		
+	margin-top:-21% !important;
+	padding-bottom:32%;	
 }
 
 button{	
@@ -574,21 +601,7 @@ button{
     display: inline-block;
     font-size: 16px;
     cursor: pointer;    
-}
-
-/* about me 2x buttons (left) */
-#resume{
-	margin-top:-5% !important;	
-	margin-left:0%;
-	float: right;		
-}
-
-/* blog button (right) */
-#process{
-	margin-top:-5% !important;
-	margin-left: -39% !important;
-	float: left;	
-}
+} 
 
 .orange{ 
 	color:#ffbd4a;
@@ -607,160 +620,133 @@ li .resumeNext:hover{
 	display: none;
 }
 
-@media screen and (max-width: 1784px) {
 
-}
-
-@media screen and (max-width: 1514px) {
-
-
-}
-
-@media screen and (max-width: 1366px) {
-#bio{
-	margin-top:-10px !important;
+@media screen and (max-width: 1366px) { /**** breakpoint! *****/
+#ccf figure{
+	margin:0 !important;	
 }
 
 #ccf article{
-	margin-top:8%;		
-}
-
-#ccf figure{
-	margin-top:10% !important;	
-}
-
-/* Shorten h2 to fit */
-#ccf article h2{
-	font-size: 1em !important;	
-}
-
-#ccf .hide{		
-	margin-top:-126% !important;	
-}
-
-#ccf .show{		
-	margin-top:-36% !important;	
-}
-
-#ccf figure{
-	margin-top:6% !important;	
-}
-
-#dogs .hide{	
-	margin-top:-125% !important;	
-}
-
-#dogs .show{		
-	margin-top:-36% !important;	
-}
-
-#dogs figure{
-	margin-top:7.5% !important;	
-}
-
-#el3phant .hide{	
-	margin-top:-134% !important;	
-}
-
-#el3phant .show{
-	margin-top:-36% !important;	
-}
-
-#el3phant figure{
-	margin-top:9% !important;	
-}
-
-#fou .hide{	
-	margin-top:-55% !important;	
-	height:auto !important;
-	width:auto !important;	
-}
-
-#fou .show{
-	margin-top:-36% !important;		
-	height:auto !important; /* Important to show .hide  */
-}
-
-#fou article{
-	height:90vh !important;
-}
-
-#fou figure{
-	margin-top:21% !important;	
-}
-
-#spotx .hide{	
-	margin-top:-55% !important;		
-}
-
-#spotx .show{
-	margin-top:-36% !important;		
-	height: auto !important; /* Important to show .hide  */
-}
-
-#spotx article{
-	height:100vh !important;
-}
-
-#spotx figure{
-	margin-top:10% !important;	
-}
-
-#wb .hide{
-	margin-top:-134% !important;	
-}
-
-#wb article{
-	margin-top:1% !important;
 	height:100vh !important;	
 }
 
-#resume{	
-	margin-left:-4%;		
+#ccf article h2{
+	margin-top:-32% !important;
+}
+
+#ccf p, #ccf p:active, #ccf .show{
+	margin:-38% auto;				
+}
+
+#ccf figure img{
+	width:70% !important;
+	margin-top:51% !important;
+}
+
+#dogs article h2{
+	margin-top:-32% !important;
+}
+
+#dogs p, #dogs p:active, #dogs .show{
+	margin:-37% auto;			
+}
+
+#dogs figure{
+	margin:0 !important;	
+}
+
+#dogs figure img{
+	width:70% !important;
+	margin-top:51% !important;
+}
+
+#el3phant article h2{
+	margin-top:-32% !important;
+}
+
+#el3phant p, #el3phant p:active, #el3phant .show{
+	margin:-37% auto;					
+}
+
+#el3phant figure{
+	margin:0 !important;	
+}
+
+#el3phant figure img{
+	width:75% !important;
+	margin-top:51% !important;
+}
+
+#fou article{
+	height:100vh !important;	
+}
+
+#fou article h2{
+	margin-top:-32% !important;
+}
+
+#fou p, #fou p:active, #fou .show{
+	margin:-37% auto;			
+}
+
+#fou figure{
+	margin:0 !important;	
+}
+
+#fou figure img{
+	width:65% !important;
+	margin-top:51% !important;
+}
+
+#spotx article h2{
+	margin-top:-32% !important;
+}
+
+#spotx p, #spotx p:active, #spotx .show{
+	margin:-37% auto;			
+}
+
+#spotx figure{
+	margin:0 !important;	
+}
+
+#spotx figure img{
+	width:70% !important;
+	margin-top:51% !important;
+}
+
+#wb article h2{
+	margin-top:-30% !important;
+}
+
+#wb p, #wb p:active, #wb .show{
+	margin:-27% auto;			
+}
+
+#wb figure{
+	margin:0 !important;	
+}
+
+#wb figure img{
+	width:60% !important;
+	margin-top:51% !important;
 }
 
 }
 
-@media screen and (max-width: 1282px) {
-#bio figure p{	
-	padding-bottom:32%;
+
+@media screen and (max-width: 1280px) {
+#ccf article{	
+	height:120vh!important;	
 }
 
-#bio article p{	
-	padding-bottom:32%;
-}
-
-#resume{	
-	margin-left:-5%;		
-}
-
-#ccf .hide{	
-	margin-top:-137% !important;	
-}
-
-#dogs .hide{	
-	margin-top:-136% !important;	
-}
-
-#el3phant .hide{	
-	margin-top:-145% !important;	
-}
-
-#fou .hide{	
-	margin-top:-62% !important;	
-}
-
-#spotx .hide{	
-	margin-top:-61% !important;	
-}
-
-#wb .hide{	
-	margin-top:-145% !important;	
+#spotx article{
+	height:120vh!important;
 }
 
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1024px) {
 .nav ul li{
 	width:12.5%;	
 }
@@ -769,16 +755,12 @@ li .resumeNext:hover{
 	height:68px !important;
 }
 
-header img{  
-	position: relative;		
-	width:35%;
-	margin:21% !important;	
-	margin-left: 34% !important;	
+article h2{
+	z-index: 500;
 }
 
-.container > header h1,
-.container > header nav {
-	margin-top: -12% !important;	
+header img{  	
+	width:25%;	
 }
 
 #bio article{
@@ -789,192 +771,72 @@ header img{
 	margin-top:12% !important;
 }
 
-#bio article p{	
-	padding-bottom:35%;
-}
-
-#resume{	
-	margin-left:-8%;		
-}
-
-#ccf figure img{ 
-	width:90% !important;	
-}
-
-#ccf .show{
-	width:95% !important;
-	margin-top:-34% !important;
-	margin-left: 3% !important;
-}
-
-#ccf .hide{	
-	width:95% !important;
-	margin-left: 3% !important;	
-	margin-top:-173% !important;	
-}
-
-#dogs figure img{ 
-	width:90% !important;	
-}
-
-#dogs .hide{		
-	margin-top:-172% !important;	
-}
-
-
-#el3phant figure img{ 
-	margin-top:30% !important;
-	width:90% !important;	
-}
-
-#el3phant .show{
-	margin-top:-54% !important;
-}
-
-#el3phant .hide{		
-	margin-top:-184% !important;	
-}
-
-#fou figure img{ 
-	margin-top:0% !important;
-	width:90% !important;	
-}
-
-#fou .hide{		
-	margin-top:-84% !important;	
-}
-
-#spotx figure img{ 
-	margin-top:30% !important;
-	width:90% !important;	
-}
-
-#spotx .hide{		
-	margin-top:-83% !important;		
-}
-
-#wb figure img{ 
-	margin-top:30% !important;
-	width:90% !important;	
-}
-
-
-#wb .hide{
-	margin-top:-183% !important;
-}
-
-}
-
-@media screen and (max-width: 880px){
-section{
-	/*border:2px solid #000;*/
-}
-
-.container > header > span,
-.container > header h1 { 
-	text-align: center;
-}
-
-.container > header nav {
-	margin: 0 auto;
-}
-
-.container > header > span {
-	text-indent: 30px;
-}
-
-#bio{
-	height:100vh !important;
-}
-
-#resume button{
-	position: absolute;
-	margin-top: -16% !important;
-	margin-left: -34% !important;	
-}
-
-#process button{
-	position: absolute;
-	margin-top: -16% !important;
-	margin-left: 	0% !important;	
-}
-
 #ccf article{
-	height:40vh !important;
-	margin-top: 20% !important;
-	text-align: center !important;	
-}
-
-#ccf article h1{
-	margin-top:-15% !important;
+	height:110vh !important;	
 }
 
 #ccf p, #ccf p:active, #ccf .show{
-	margin-top:-32% !important;
-	padding:0;
+	margin:-40% auto;	
 }
 
 #ccf figure img{
-	margin-top:40% !important;
-	margin-left:10% !important;
-	width:90% !important;	
+	margin-top:55% !important;
+	width:80% !important;
 }
 
-#el3phant article{
-	height:33vh !important;
-	margin-top: 20% !important;
-	text-align: center !important;	
+#dogs p, #dogs p:active, #dogs .show{
+	margin:-38% auto;				
 }
 
-#el3phant article h1{
-	margin-top:-15% !important;
+#dogs figure img{ 	
+	margin-top:55% !important;
+	width:80% !important;	
 }
 
-#el3phant p, #el3phant p:active, #el3phant .show{
-	margin-top:-40% !important;
-	padding:0;
+#dogs button{
+	margin-top:1% !important;
 }
 
 #el3phant figure img{
-	margin-top:20% !important;
-	width:100% !important;	
+	margin-top:55% !important;
+	width:90% !important;
 }
 
-#fou figure{
-	margin-top:20% !important;	
-	height:80vh !important;	
+#el3phant article h2{
+	z-index: 550;
 }
 
-#fou figure img{	
-	position: relative;
-	margin-top:25% !important;
-	width:80% !important;		
-	z-index: 500;	
+#el3phant p, #el3phant p:active, #el3phant .show{
+	margin:-38% auto;				
 }
 
-#spotx article{
-	margin-top:5% !important;
+#fou figure img{ 
+	margin-top:50% !important;
+	width:80% !important;	
 }
 
-#spotx figure{
-	margin-top:15% !important;
+#fou p, #fou p:active, #fou .show{
+	margin:-38% auto;				
 }
 
-#spotx figure img{
-	margin-top:40% !important;
+#spotx figure img{ 
+	margin-top:60% !important;
+	width:80% !important;	
 }
 
-#wb figure img{
-	margin-top:45% !important;
+#spotx p, #spotx p:active, #spotx .show{
+	margin:-38% auto;				
+}
+
+#wb figure img{ 
+	margin-top:50% !important;
+	width:80% !important;	
 }
 
 }
 
-@media screen and (max-width: 614px) {
-section{
-	/*border:solid red;*/
-}
-
+/**** breakpoint! *****/
+@media screen and (max-width: 768px) {  
 .nav #hamburger{
 	position: relative;
 	display: block;
@@ -995,42 +857,69 @@ section{
 	width:100%;	
 }
 
-/* logo */
-header img{  
-	position: relative;		
-	width:75%;
-	margin-top:28% !important;	
-	margin-left: 14% !important;		
+header img{
+	width:45% !important;
+	margin-top:40% !important;
+	margin-left:30% !important;
 }
 
 #circle{
 	position: relative;	
 	margin-left:-5% !important;
-	width:30% !important;	
+	width:30% !important;
 }
 
 #bio article{
-	width:100% !important;
-	margin-top:60% !important;
-	height:25vh !important;
+	position: relative;
+	width:100% !important;	
+	margin-top:30% !important;	
 	text-align: left;	
+	height:auto !important;	
 }
 
 #bio article h2{	
-	margin-top:-10% !important;
+	position: relative;
+	margin-top:0 !important;
 	text-align: center;
 }
 
+#bio figure{
+	position: relative;
+	width:100% !important;	
+	margin-top:-100% !important;	
+	padding-top:15% !important;
+	text-align: left;	
+	height:auto !important;	
+}
+
+#bio figure h2{
+	position: relative;
+	margin-top:0 !important;
+	text-align: center;
+}
+
+.thumbR ul li{	
+ 	position: relative;	
+ 	margin-top:-60% !important;
+	float: right;
+ }
+
+.thumbL ul li{	
+	position: relative;	
+	float: left;
+	margin-top:-40% !important;
+ }
+
 #resume button{
 	position: relative;
-	margin-top: -16% !important;
-	margin-left: -64% !important;	
+	margin-top:5% !important;	
+	margin-left: -30% !important;		
 }
 
 #bio figure{
 	width:100% !important;
 	margin-top:40% !important;
-	height:30vh !important;
+	/*height:30vh !important;*/  /*  ########  BLOG AUTO HEIGHT ####### */
 	text-align: left;	
 }
 
@@ -1039,16 +928,14 @@ header img{
 	text-align: center !important;
 }
 
-#process button{
-	position: absolute;
-	margin-top: -16% !important;
-	margin-left: 28% !important;	
+article p{		
+	width: 100% !important;
 }
 
 #ccf article{
-	height:40vh !important;
+	height:auto !important;
 	margin-top: 20% !important;
-	text-align: center !important;	
+	text-align: center !important;		
 }
 
 #ccf article h1{
@@ -1056,44 +943,44 @@ header img{
 }
 
 #ccf p, #ccf p:active, #ccf .show{
-	margin-top:-32% !important;
 	padding:0;
 }
 
 #ccf figure img{
-	margin-top:0% !important;
 	margin-left:10% !important;
-	width:80% !important;	
+	margin-top:-5% !important;
 }
 
 #dogs article{
 	position: absolute;
-	height:50vh !important;
+	height:auto !important;
 	margin-top: -140% !important;
-	text-align: center !important;	
+	text-align: center !important;		
 }
 
 #dogs article h1{
-	margin-top:-15% !important;
+	margin-top:0% !important;
 }
 
 #dogs article h2{
-	margin-top:-35% !important;
+	margin-top:-33% !important;
 }
 
-#dogs .hide{
-	z-index: 1000;
-}
-
-#dogs p, #dogs p:active, #dogs .show{
+#dogs p, #dogs p:active, #dogs .show
+{
 	position: relative;
-	margin-top:-40% !important;
+	margin-top:-38% !important;
+
 	padding:0;
+}
+
+#dogs figure{
+	margin-left:-8% !important;
 }
 
 #dogs figure img{	
 	position: relative;
-	margin-top:90% !important;
+	margin-top:90% !important;	
 	width:80% !important;		
 	z-index: 500;	
 }
@@ -1108,9 +995,12 @@ header img{
 	margin-top:-15% !important;
 }
 
-#el3phant p, #el3phant p:active, #el3phant .show{
-	margin-top:-40% !important;
-	padding:0;
+#el3phant article h2 {
+    z-index: -5;
+}
+
+#el3phant figure{
+	margin-left: 5% !important;
 }
 
 #el3phant figure img{
@@ -1119,105 +1009,91 @@ header img{
 }
 
 #fou article{
-	position: relative;
-	height:75vh !important;
-	margin-top: -155% !important;
-	text-align: center !important;	
+	position: absolute;
+	height:55vh !important;
+	margin-top: -125% !important;
+	text-align: center !important;		
 }
 
 #fou  article h1{
-	margin-top:-35% !important;
+	margin-top:0 !important;
 }
 
 #fou  article h2{
-	margin-top:-30% !important;
+	margin-top:-33% !important;
 }
 
-#fou  .hide{
-	z-index: 1000;
-}
-
-#fou  p, #fou  p:active, #fou  .show{
+#fou  p, #fou  p:active, #fou  .show
+{
 	position: relative;
-	margin-top:-40% !important;
+	margin-top:-37% !important;
 	padding:0;
 }
 
 #fou figure{
-	margin-top:5% !important;		
+	margin-top:0 !important;	
+	margin-left:-9% !important;	
 }
 
 #fou figure img{	
 	position: relative;
-	margin-top:95% !important;
+	margin-top:57% !important;
 	width:80% !important;		
 	z-index: 500;	
 }
 
 #spotx article{
-	height:40vh !important;
-	margin-top: -10% !important;
+	height:45vh !important;
+	margin-top: 20% !important;
 	text-align: center !important;
-}
+	}
 
 #spotx article h1{
-	margin-top:10% !important;	
+	margin-top:-15% !important;
 }
 
 #spotx p, #spotx p:active, #spotx .show{
-	margin-top:-40% !important;
 	padding:0;
 }
 
+#spotx figure{
+	margin-left:5% !important;
+}
+
 #spotx figure img{
-	margin-top:0% !important;
-	margin-left:-10% !important;
+	margin-top:-10% !important;	
 	width:90% !important;	
 }
 
 #wb article{
 	position: absolute;
-	height:50vh !important;
-	margin-top: -130% !important;
+	height:auto !important;
+	margin-top: -160% !important;
 	text-align: center !important;		
 }
 
 #wb  article h1{
-	margin-top:-25% !important;
+	margin-top:25% !important;
 }
 
 #wb article h2{
-	margin-top:-34% !important;
+	margin-top:-32% !important;
 }
 
-#wb  .hide{
-	z-index: 1000;
-}
-
-#wb p, #wb p:active, #wb .show,
-#wb figure{
+#wb p, #wb p:active, #wb .show
+{
 	position: relative;
-	margin-top:-29% !important;
+	margin-top:-26% !important;
 	padding:0;
 }
 
 #wb figure img{	
 	position: relative;
-	margin-top:90% !important;
+	margin-top:75% !important;
 	margin-left:10% !important;
 	float: left;
 	width:80% !important;		
 	z-index: 500;	
-}
-
-#wb h1 span{
-	height:40vh !important;
-	display:none;
-}
-
-#wb h1 strong{
-	position: absolute;	
-	margin-top:-10px !important;	
 }
 
 .cbp-so-side {
@@ -1231,237 +1107,146 @@ header img{
 
 }
 
-@media screen and (max-width: 686px) {
-nav{	
-	padding-top: 14% !important;	
-}
-
-header img{  
-	position: relative;	
-	margin-top:10% !important;	
-	margin-left: 14% !important;		
-}
-
-nav{	
-	padding-top: 20% !important;	
-}
-
-#circle{
-	position:relative;
-	margin-top: -10% !important;	
-	margin-left:25% !important;
-	width:80% !important;		
-}
-
-#resume button{
-	position: absolute;
-	margin-top: -16% !important;
-	/*margin-left: -74% !important;	*/
-}
-
-#process button{
-	position: absolute;
-	margin-top: -16% !important;
-	/*margin-left: 38% !important;	*/
-}
-
-#ccf article{
-	height:35vh !important;
-	margin-top: 20% !important;
-	text-align: center !important;	
-}
-
-#ccf article h1{
-	margin-top:-12% !important;
-}
-
-#ccf figure img{
-	margin-top:-20% !important;
-	margin-left:0% !important;
-	width:100% !important;	
-}
-
-#dogs article h1{	
-	/*border:2px solid #ffac00;*/ /* ########## empasis repeat */
-	margin-top:-10% !important;
-}
-
-#dogs article h2{	
-	margin-top:-20% !important;
-	/*border:2px solid blue;*/  /* ########## empasis repeat */
-}
-
-#dogs article{
-	position: absolute;
-	height:80vh !important;	
-	margin-top: -160% !important;
-	text-align: center !important;	
-	/*border:2px solid #000;*/ /* ########## empasis repeat */
-}
-
-#dogs figure img{	
-	position: relative;	
-	width:100% !important;		
-	z-index: 500;		
-}
-
-#el3phant article {
-	height:10vh !important;
+@media screen and (max-width: 480px){
+header img{
+	width:50% !important;
 	margin-top:40% !important;
-}
-
-#el3phant article h2{
-	margin-top:-30% !important;
-}
-
-#el3phant p, #el3phant p:active, #el3phant .show{
-	position: relative;
-	margin-top:-41% !important;
-	padding:0;
-}
-
-#el3phant figure img{
-	margin-top: -10% !important;	
-	width:100% !important;
-}
-
-#fou article{	
-	margin-top:-150% !important;
-	height: 50vh !important;	
-}
-
-#fou article h1{
-	margin-top:-19% !important;
-}
-
-#fou figure{
-	height:90vh !important;	
-}
-
-#fou figure img{
-	position: relative;
-	width:100% !important;
-	margin-top:65% !important;	
-}
-
-#spotx article{
-	margin-top:0 !important;
-	height:45vh !important;	
-}
-
-#spotx figure img{
-	margin-left:0.5% !important;
-	width:100% !important;
-	margin-top:-15% !important;
-}
-
-#wb article{
-	height:40vh !important;
-	margin-top:-122% !important;
-}
-
-#wb article h1{
-	margin-top:-18% !important;
-}
-
-#wb article h1 strong{
-	display: none;
-}
-
-#wb article h2{
-	margin-top:-30% !important;
-}
-
-#wb h1 span{
-	height:40vh !important;
-	display:none;
-}
-
-#wb article .show{
-	position: relative;
-	/*margin-top:-20% !important;             */
-}
-
-#wb figure{
-	margin-top:50% !important;
-}
-
-#wb figure img{
-	margin-top:40% !important;
-}
-
-}
-
-/* ### Samsung #### */
-
-@media screen and (max-width: 360px){
-section{
-	border:2px solid blue;
+	margin-left:30% !important;
 }
 
 nav{	
-	padding-top: 14% !important;	
+	margin-top: 45% !important;	
 }
 
 #circle{
 	position:relative;
 	float: left;	
-	margin-top: -10% !important;	
-	margin-left:22% !important;
+	margin-top: -40% !important;	
+	margin-left:25% !important;
 	width:60% !important;	
-	/*border:2px solid #ffac00;*/
 }
 
-header img{  
-	position: relative;	
-	margin-top:10% !important;	
-	margin-left: 14% !important;		
+/* Social Icons */
+image{
+	display: none;		
 }
 
-nav{	
-	padding-top: 20% !important;	
+#bio{
+	height:auto !important;
+}
+
+#bio article{
+	margin-top:50% !important;	
+}	
+
+#bio figure {	
+	height:auto !important;	
 }
 
 #resume button{
-	position: absolute;
-	margin-top: -16% !important;
-	margin-left: -56% !important;	
+	position: absolute;	
+	margin-left: -5% !important;	
 }
 
-#process button{
+#resume{
 	position: absolute;
-	margin-top: -16% !important;
-	margin-left: 22% !important;	
+	margin-left:8% !important;
+	margin-top:-10% !important;
+}
+ 
+#process{
+	position: absolute;
+	margin-left:8% !important;
+	margin-top:-10% !important;
+}
+
+article p{		
+	width: 100% !important;
+}
+
+article p .hide{
+	display: inline-block;
+}
+
+article p strong{
+	display: none;
+}
+
+#ccf{ 
+	margin-top:10% !important;		
+}
+
+#ccf article{	
+	float: left;
+	margin-top: 20% !important;
+	height:85vh !important;	
+}
+
+#ccf article button {	
+	margin-top:10% !important;	
+}
+
+br{
+	display: none !important;
+}
+
+#ccf figure{
+	margin-left:-6% !important;
+	height:auto !important;
+	margin-top:-10% !important;
+}
+
+#ccf figure img{	
+	width: 100% !important;
+	position: relative;	
+	margin-top:-5% !important;	
 }
 
 #ccf article{
-	height:42vh !important;
-	margin-top: 20% !important;
-	text-align: center !important;	
+	z-index: 50;
 }
 
-#ccf figure img{
-	margin-top:0% !important;
-	margin-left:10% !important;
-	width:80% !important;	
+#ccf figure{
+	z-index: 50;
 }
 
 #dogs article{
 	position: absolute;
-	height:50vh !important;
-	margin-top: -140% !important;
+	height:85vh !important;
+	margin-top: -190% !important;
 	text-align: center !important;	
+}
+#dogs article h1{
+	margin-top:-20% !important;
+}
+
+#dogs article button {	
+	margin-top:10% !important;	
+}
+
+#dogs figure{
+	margin-top:30% !important;	
+	margin-left:0.2% !important;
 }
 
 #dogs figure img{	
 	position: relative;
-	margin-top:140% !important;
-	width:80% !important;		
+	margin-top:110% !important;	
+	width:100% !important;		
 	z-index: 500;	
 }
 
+#el3phant {
+	margin-left:8% !important;
+}
+
+#el3phant article{
+	height:50vh !important;
+	margin-top:30% !important;	
+}
+
 #el3phant article h2{
-	margin-top:-38% !important;
+	margin-top:-36% !important;
 }
 
 #el3phant p, #el3phant p:active, #el3phant .show{
@@ -1470,17 +1255,39 @@ nav{
 	padding:0;
 }
 
+#el3phant article button {	
+	margin-top:10% !important;	
+}
+
+#el3phant figure{
+	margin-left:0% !important;
+}
+
+#el3phant figure img{
+	margin-top:-5% !important;
+}
+
+#fou{
+	height:auto !important;
+}
+
 #fou article{	
 	margin-top:-160% !important;
-	height: 50vh !important;	
+	height:85vh !important;
 }
 
 #fou article h1{
-	margin-top:-23% !important;
+	margin-top:-15% !important;
+}
+
+#fou article button {	
+	margin-top:10% !important;	
 }
 
 #fou figure{
 	height:90vh !important;	
+	margin-top:30% !important;
+	margin-left:-8% !important;
 }
 
 #fou figure img{
@@ -1488,19 +1295,36 @@ nav{
 	margin-top:95% !important;	
 }
 
+#spotx{
+	height:auto !important;
+}
+
 #spotx article{
 	margin-top:20% !important;
-	height:45vh !important;	
+	height:55vh !important;
+}
+
+#spotx article button {	
+	margin-top:10% !important;	
+}
+
+#spotx figure{
+	margin-left:5% !important;
 }
 
 #spotx figure img{
 	width:90% !important;
-	margin-top:-15% !important;
+	margin-top:5% !important;
+	border-radius: 5px;
+}
+
+#wb{
+	height:100vh !important;
 }
 
 #wb article{
-	height:60vh !important;
-	margin-top:-132% !important;
+	height:95vh !important;
+	margin-top:-152% !important;
 }
 
 #wb article h1{
@@ -1517,123 +1341,159 @@ nav{
 	margin-top:-10px !important;	
 }
 
-#wb article .show{
-	position: relative;
-	margin-top:-20% !important;
-}
-
-#wb figure{
-	margin-top:50% !important;
+#wb article button {	
+	margin-top:5% !important;	
 }
 
 #wb figure img{
-	margin-top:30% !important;
+	margin-top:110% !important;
+}
+
+}
+
+@media screen and (max-width: 360px){
+header img{
+	margin-top:20% !important;
+}
+
+#ccf article h2{
+	line-height: 25px;
+}
+
+#ccf article p{
+	margin-top:-35% !important;
+}
+
+#ccf article{
+	height:105vh !important;
+}
+
+#ccf figure img{
+	margin-top:20% !important;
+}
+
+#dogs article {
+	height:100vh !important;
+	margin-top:-210% !important;
+}
+
+#dogs article h1{
+	margin-top:-20% !important;
+}
+
+#dogs figure img{
+	margin-top:110% !important;
+}
+
+#el3phant article {
+	height:70vh !important;
+}
+
+#fou article{
+	margin-top:-210% !important;
+	height:70vh !important;
+}
+
+#fou figure{
+	height:120vh !important;
+}
+
+#fou figure img{
+	margin-top:115% !important;
+}
+
+#spotx article{
+	height:70vh !important;
+}
+
+#spotx figure img{
+	margin-top:-5% !important;
+}
+
+#wb{
+	height:125vh !important;
+}
+
+#wb article {
+    height: 95vh !important;
+    margin-top: -180% !important;   
+}
+
+#wb article h1{
+	margin-top:-20% !important;
+	/*border:2px solid #ffac00;*/
+}
+
+#wb figure{
+	margin-top:10% !important;
+}
+
+#wb figure img{
+	margin-top:110% !important;	
 }
 
 }
 
 @media screen and (max-width: 320px){
-section{
-	border:2px solid green;
-}
-
-nav{	
-	padding-top: 14% !important;	
-}
-
-#circle{
-	width:100% !important;	
-}
-
-#resume button{	
-	margin-left: -50% !important;	
-}
-
-#process button{
-	margin-left: 18% !important;	
-}
-
-#ccf figure img{	
-	width:100% !important;	
+#ccf article {
+	height:120vh !important;
+	/*border:2px solid #ffac00;*/
 }
 
 #dogs article{
-	position: absolute;
-	height:60vh !important;
-	margin-top: -140% !important;
-	text-align: center !important;	
+	margin-top:-250% !important;
 }
 
 #dogs article h1{
-	margin-top:-40% !important;
+	margin-top: -25% !important;
 }
 
-#dogs figure img{	
-	position: relative;
-	margin-top:120% !important;
-	width:80% !important;		
-	z-index: 500;	
+#dogs figure{
+	margin-top:100% !important;
 }
 
-#fou{	
-	height:100vh !important;	
-}
-
-#fou article{	
-	margin-top:-160% !important;
-	height: 50vh !important;	
-}
-
-#fou article h1{	
-	margin-top:-55% !important;	
-}
-
-#fou .show{
-	margin-top:-50% !important;	
-}
-
-#fou figure{
-	position: relative;
-	margin-top:-10% !important;
-	height:95vh !important;	
+#dogs figure img{
+	margin-top:100% !important;
 }
 
 #fou figure img{
-	width:100% !important;
-	position: relative;
-	margin-top:85% !important;	
+	width:100 !important;
+	margin-top:130% !important;
+}
+
+#spotx article{
+	height:100vh !important;
+}
+
+#spotx figure img{
+	margin-top:-15% !important;
 }
 
 #wb article{
-	height:60vh !important;
-	margin-top:-132% !important;
+	height:auto !important;
+	margin-top:-220% !important;	
 }
 
 #wb article h1{
-	margin-top:-30% !important;
+	margin-top:-10% !important;
 }
 
-#wb h1 span{
-	height:40vh !important;
-	display:none;
+#wb article h2{
+	margin-top:-35% !important;
 }
 
-#wb h1 strong{
-	position: absolute;	
-	margin-top:-10px !important;	
-}
-
-#wb article .show{
+#wb p, #wb p:active, #wb .show{
 	position: relative;
-	margin-top:-20% !important;
+	margin-top:-15% !important;
+	padding:0;
 }
 
 #wb figure{
-	margin-top:50% !important;
+	margin-top:120% !important;
 }
 
 #wb figure img{
-	margin-top:30% !important;
+	margin-top:20% !important;
 }
 
 }

@@ -1,14 +1,12 @@
- //  Author - Ace Lio 2017
-
  $(document).ready(function(){
  	// Hamburger
  	 	$('.nav #hamburger').click(function(){
  		$('.nav ul').slideToggle();
  	});
+ 
+ 	 	 
 
-
-
- 	var navOffset = $(".nav").offset().top; 
+ 	var navOffset = $(".nav").offset().top;  
  	
  	$(window).scroll(function(){
  		var scrollPos = $(window).scrollTop();
@@ -22,24 +20,24 @@
  		}else{
  			$("nav").removeClass("fixed"); 	
  		}
-
+  
  	});  
   
  	// About Me Section  
- 	$('#bio article p').hide();
- 	$('#bio figure p').hide();
+ 	$('#bio article p, #bio article ul li').hide();
+ 	$('#bio figure p, #bio figure ul li').hide();
  	$('#bio thumbnails').hide();
- 	$('#ccf article .hide').hide();
- 	$('#dogs article .hide').hide();
- 	$('#el3phant article .hide').hide();
- 	$('#fou article .hide').hide();
- 	$('#spotx article .hide').hide();
- 	$('#wb article .hide').hide();
+ 	// $('#ccf article .hide').hide();
+ 	// $('#dogs article .hide').hide();
+ 	// $('#el3phant article .hide').hide();
+ 	// $('#fou article .hide').hide();
+ 	// $('#spotx article .hide').hide();
+ 	// $('#wb article .hide').hide();
 
  	$('#bio article h2').click(function(e){
  		e.preventDefault();
  		if(!$(this).hasClass('active')){
-			 	$('#bio article p').slideToggle('fast').addClass('active');			 	
+			 	$('#bio article p, #bio article ul li').slideToggle('fast').addClass('active');			 	
 			 } else {
 			 	$(this).removeClass('active');
 			 }	 		
@@ -48,7 +46,7 @@
  	$('#bio figure h2').click(function(e){
  		e.preventDefault();
  		if(!$(this).hasClass('active')){
-			 	$('#bio figure p').slideToggle('fast').addClass('active');			 	
+			 	$('#bio figure p,  #bio figure ul li').slideToggle('fast').addClass('active');			 	
 			 } else {
 			 	$(this).removeClass('active');
 			 }	 		
@@ -104,6 +102,15 @@
 	 		e.preventDefault();
 	 		if(!$(this).hasClass('active')){
 	 			$('#wb article .hide').slideToggle('fast').addClass('active');	 			
+	 		} else {
+	 			$(this).removeClass('active');
+	 		}
+	 });
+
+	 $('#contact article .readmore').click(function(e){
+	 		e.preventDefault();
+	 		if(!$(this).hasClass('active')){
+	 			$('#contact article .hide').slideToggle('fast').addClass('active');	 			
 	 		} else {
 	 			$(this).removeClass('active');
 	 		}
