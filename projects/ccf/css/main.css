@@ -29,7 +29,7 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
-    padding: 0;
+    padding: 0; 
 }
 
 /*
@@ -230,7 +230,7 @@ html {
     background-size: cover;
     background-position: center;  
     width:101%; 
-  }
+  } 
 
   section #community {
     z-index: 3; /* slide under groups 1 and 3 */
@@ -255,7 +255,7 @@ html {
   }
 
   #community2 .parallax__layer--back {   
-    background-color: #fff;
+    /*background-color: #fff;*/
     background-attachment: fixed;
     background-position: center; 
     width:101%; 
@@ -270,7 +270,7 @@ html {
   }
 
   #community4 .parallax__layer--back { 
-    background-color: #ecf0f1;
+    /*background-color: #ecf0f1;*/
     background-attachment: fixed;
     background-position: center; 
     width:101%;  
@@ -279,7 +279,7 @@ html {
   .webkit #community4 .parallax__layer--back {
     background-color: rgba(71, 163, 218, 0);
   }
- 
+  
   #community5 .parallax__layer--back {  
     background-attachment: fixed;
     background-position: center; 
@@ -481,7 +481,7 @@ html {
   }
 
   #opshop5 .parallax__layer--back { 
-    background-color: #ecf0f1;
+    /*background-color: #ecf0f1;*/
     background-size: cover;
     background-attachment: fixed;
     background-position: center; 

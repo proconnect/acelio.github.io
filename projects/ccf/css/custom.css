@@ -521,7 +521,7 @@ header{
 #community3 .parallax__layer--back {
     background-size: cover;
     width:101%;    
-    background: #ecf0f1;
+    /*background: #ecf0f1;*/
   }
 
 #welcome{   

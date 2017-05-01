@@ -22,12 +22,12 @@ body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;   
 }   
-          
+           
 a { 	  
-	color:#7f7f7f; 
+	color:#7f7f7f;  
 	text-decoration: none;  
 }   
- 
+  
 a:hover {	
 	color:#a72b63;
 }
@@ -181,8 +181,8 @@ article p .hide{
 }
 
 #ccf article{		
-	margin-top:8%;	
-	height:70vh !important;		
+	margin-top:8%;		
+	height:100vh !important;		
 }
 
 #ccf p, #ccf p:active, #ccf .show{
@@ -200,6 +200,7 @@ article p .hide{
 }
 
 #dogs article {
+	height:auto !important;
 	margin-top:9%;
 	position: relative;		
 }
@@ -243,6 +244,7 @@ article p .hide{
 }
 
 #el3phant article{
+	height:auto !important;
 	margin-top:12%;		
 }
 
@@ -267,7 +269,7 @@ article p .hide{
 
 #fou article{
 	margin-top:9% !important;	
-	height:70vh !important;
+	height:auto !important;
 }
 
 #fou article h2{
@@ -289,7 +291,7 @@ article p .hide{
 
 #spotx article{
 	margin-top:-2% !important;	
-	height:90vh !important;
+	height:auto !important;
 }
 
 #spotx p{	
@@ -325,7 +327,7 @@ article p .hide{
 
 #wb article{
 	margin-top:-2% !important;
-	height:90vh !important;
+	height:auto !important;
 }
 
 #wb p{	
@@ -355,9 +357,6 @@ article p .hide{
 	width:50% !important;
 }
 
-
-
-
 #contact figure{ 
 	margin-top:7% !important;	
 }
@@ -383,6 +382,7 @@ article p .hide{
 #contact figure img{
 	position: relative;
 	margin-top:33% !important;	
+	/*border:2px solid #ffac00;*/
 } 
 
 #contact article h1{
@@ -392,6 +392,102 @@ article p .hide{
 
 #contact article h2{
 	margin-top: -30% !important;
+}
+
+#contact article .sm {	
+	position: absolute;
+	margin:-33% auto;		
+	height:auto !important;		
+	width:60%;			
+	padding:20px;
+	border-radius:5px;
+	transform:translateX(40%) translateY(35%);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.front-face{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color:#47a3da; 	
+	display: block;
+	left:0;
+	top:0;
+	transition: width 0.2s ease-in-out;
+}
+
+.sm:hover .front-face{
+	width:0;	
+} 
+
+.sm:hover .front-face .text{	
+	font-size:1.5rem !important;	
+	width:400px !important;
+	transform:rotate(-90deg) translateY(-44%);	
+	display: none;
+} 
+
+.front-face .text{
+	font-size: 3rem !important;
+	color:#fff;
+	text-align: center;
+	display: block;
+	line-height:400px;
+	transition: all 0.2s ease-in-out;
+}
+
+.input-group {
+	font-family: "Raleway";
+	width: 15em;
+	height: 2.5em;
+	margin-bottom: 1.8em;            /* some space below other field */	
+	padding-left: 2.5em;             /* space from left to accommodate icons */
+	border: 0.1em solid #ccc;        /* light gray border applied */
+	border-radius: 0.3em;            /* small border radius */
+	/*background-color: #ffffea; */      /* light yellow field background color */
+}
+
+.wrapper .fa {
+	position: absolute;
+	padding: 0.4em;      /* sat the icons with a right spacing referring to the border */
+	font-size: 1.2em;   /* chose a suitable font size according to the size of the field */
+	color: #fff;       /* gave icons a light gray color */
+}
+
+
+.textarea {	
+	font-family: "Raleway";	
+	float: right;
+	width: 30em;         /* initial width */	    
+	height: 10em;         /* initial height */
+	display: block;       /* show below input fields */
+	padding-left: 2.5em;       /* sit text/placeholder with some edges padding */
+	border: 0.1em solid #ccc;  /* same border style as the input fields */
+	border-radius: 0.3em;      /* same border radius as the input fields */
+	/*background-color: #ffffea;*/ /* same background color as the input fields */
+}
+
+.input-group:hover {
+	border-color: #7f7f7f;
+	/*box-shadow: 0em 0em 0.2em #3399FF;*/
+}	 
+
+.input-group:active {
+	border-color: #006699;
+}	 
+
+.textarea:hover {
+	border-color: #7f7f7f;
+	/*box-shadow: 0em 0em 0.2em #3399FF;*/
+}	 
+
+.textarea:active {
+	border-color: #006699;
+}
+
+.send-btn {	  	
+	margin-top: 1em;	  
 }
  
 h3 {
@@ -531,6 +627,7 @@ nav svg{
 	position: relative;	
 	float: left;
 	margin-top:-40% !important;
+	/*z-index: -5;*/
  }
 
  /* Resume*/
@@ -689,7 +786,7 @@ li .resumeNext:hover{
 	margin:-37% auto;			
 }
 
-#fou figure{
+#fou figure{	
 	margin:0 !important;	
 }
 
@@ -706,7 +803,7 @@ li .resumeNext:hover{
 	margin:-37% auto;			
 }
 
-#spotx figure{
+#spotx figure{	
 	margin:0 !important;	
 }
 
@@ -732,6 +829,23 @@ li .resumeNext:hover{
 	margin-top:51% !important;
 }
 
+#contact article h2{
+	margin-top:-32% !important;
+}
+
+#contact p, #contact p:active, #contact .show{
+	margin:-37% auto;			
+}
+
+#contact figure{
+	margin:0 !important;	
+}
+
+#contact figure img{
+	width:70% !important;
+	margin-top:51% !important;
+}
+
 }
 
 
@@ -741,6 +855,10 @@ li .resumeNext:hover{
 }
 
 #spotx article{
+	height:120vh!important;
+}
+
+#contact article{
 	height:120vh!important;
 }
 
@@ -833,6 +951,24 @@ header img{
 	width:80% !important;	
 }
 
+#contact article h2{
+	z-index: -50;
+}
+
+#contact article p .hide{	
+	width:60% !important;
+	float: right;
+}
+
+#contact figure img{ 
+	margin-top:60% !important;
+	width:80% !important;	
+}
+
+#contact p, #contact p:active, #contact .show{
+	margin:-38% auto;				
+}
+
 }
 
 /**** breakpoint! *****/
@@ -869,6 +1005,10 @@ header img{
 	width:30% !important;
 }
 
+article h2{
+	z-index: -50;
+}
+
 #bio article{
 	position: relative;
 	width:100% !important;	
@@ -880,7 +1020,7 @@ header img{
 #bio article h2{	
 	position: relative;
 	margin-top:0 !important;
-	text-align: center;
+	text-align: center;	
 }
 
 #bio figure{
@@ -1096,6 +1236,27 @@ article p{
 	z-index: 500;	
 }
 
+#contact article h1{
+	margin-top:-15% !important;
+}
+
+#contact p, #contact p:active, #contact .show{
+	padding:0;
+}
+
+#contact figure{
+	margin-left:5% !important;
+}
+
+#contact figure img{
+	margin-top:-10% !important;	
+	width:90% !important;	
+}
+
+#contact svg{
+	display: none;
+}
+
 .cbp-so-side {
 	float: none;
 	width: 100%;
@@ -1115,7 +1276,7 @@ header img{
 }
 
 nav{	
-	margin-top: 45% !important;	
+	margin-top: 45% !important;		
 }
 
 #circle{
@@ -1178,12 +1339,16 @@ article p strong{
 
 #ccf article{	
 	float: left;
-	margin-top: 20% !important;
-	height:85vh !important;	
+	margin-top: 24% !important;
+	height:88vh !important;	
 }
 
 #ccf article button {	
 	margin-top:10% !important;	
+}
+
+#ccf article p{
+	margin-top:-35% !important;
 }
 
 br{
@@ -1314,7 +1479,7 @@ br{
 
 #spotx figure img{
 	width:90% !important;
-	margin-top:5% !important;
+	margin-top:-5% !important;
 	border-radius: 5px;
 }
 
@@ -1324,11 +1489,11 @@ br{
 
 #wb article{
 	height:95vh !important;
-	margin-top:-152% !important;
+	margin-top:-155% !important;
 }
 
 #wb article h1{
-	margin-top:-23% !important;
+	margin-top:-20% !important;
 }
 
 #wb h1 span{
@@ -1347,6 +1512,55 @@ br{
 
 #wb figure img{
 	margin-top:110% !important;
+}
+
+#contact{	
+	/*border:2px solid red;*/
+}
+
+#contact article {	
+	margin:0 auto !important;	
+	text-align: center;
+	width:100% !important;	
+}
+
+#contact article h2{
+	margin-top: -20% !important;
+	z-index: 5;
+}
+
+#contact article .sm {	
+	position: absolute;
+	margin-top:-38%;	
+	margin-left:-45%;	
+	height:auto !important;		
+	width:100%;			
+	padding:20px;
+	border-radius:5px;
+	transform:translateX(40%) translateY(35%);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.front-face{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color:#47a3da; 	
+	display: block;
+	left:0;
+	top:0;
+	transition: width 0.2s ease-in-out;
+}
+
+.input-group{
+	width:100%;
+}
+
+.textarea{
+	width: 23.2em;
+	height: 10em;	
+	padding-left: 2.5em;
 }
 
 }
@@ -1432,6 +1646,14 @@ header img{
 	margin-top:110% !important;	
 }
 
+#contact article{
+	/*height:70vh !important;*/
+}
+
+#contact figure img{
+	margin-top:-5% !important;
+}
+
 }
 
 @media screen and (max-width: 320px){
@@ -1494,6 +1716,14 @@ header img{
 
 #wb figure img{
 	margin-top:20% !important;
+}
+
+#contact article{
+	height:100vh !important;
+}
+
+#contact figure img{
+	margin-top:-15% !important;
 }
 
 }
