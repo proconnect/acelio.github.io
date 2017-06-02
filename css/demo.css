@@ -184,6 +184,10 @@ article p .hide{
 	display: none;
 }
 
+nav #myImage2{	
+	display: none;	
+}
+
 svg#circle {
   height: 120px;
   width: 120px; 
@@ -1572,8 +1576,12 @@ article p{
 }
 
 @media screen and (max-width: 480px){
-nav a{
-	 border:2px solid #ffac00;
+nav #myImage{
+	display: none;
+}
+
+nav #myImage2{	
+	display: block;
 }
 
 #home nav {    
@@ -1584,7 +1592,7 @@ nav a{
 svg#circle {
   height: 120px !important;
   width: 120px !important; 
-  margin-left:0px !important;   
+  margin-left:0px !important;
 } 
 
 .containerHead {
