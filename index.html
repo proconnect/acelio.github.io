@@ -12,14 +12,14 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />	
 		<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
 		<link rel="stylesheet" href="css/svgNav.css">
-		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">	
+		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">	 
 		<script src="js/modernizr.custom.js"></script>	 
-	</head>     
-	<body>       
+	</head>      
+	<body>        
 		<!-- <div class="status"></div> -->        
-		<div class="container">    
+		<div id="home" class="container">      
 				<header class="clearfix">
-				<div class="containerHead">				 
+				<div class="containerHead">				  
 					<img src="images/logoWhite.png" alt="">	 
 					       	  
 						<nav> 
@@ -57,12 +57,17 @@
 						<ul class="clearfix">
 							<li><a href="#">Home</a></li>
 							<li><a href="#bio">About Me</a></li>
-							<li><a href="#ccf">Project One</a></li>
-							<li><a href="#dogs">Project Two</a></li>
-							<li><a href="#el3phant">Project Three</a></li>
-							<li><a href="#fou">Project Four</a></li>
-							<li><a href="#spotx">Project Five</a></li>
-							<li><a href="#wb">Project Six</a></li>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Projects</a>
+								<div class="dropdown-content">
+									<a href="#ccf">CCF</a>
+									<a href="#dogs">Dogs</a>
+									<a href="#el3phant">El3phant</a>
+									<a href="#fou">Fou</a>
+									<a href="#spotx">SpotX</a>
+									<a href="#wb">Whistle Box</a>
+								</div>
+							</li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>				
@@ -73,7 +78,7 @@
 					<article class="cbp-so-side cbp-so-side-left" >
 						<h2>BIO</h2>
 							<!-- <div class="resumeContainer"> -->
-								<p style="width:100%; font-size: 20px;">I'm in my final year of a Bachelors degree at Media Design School. It all started back in 2009 when i graduated with a diploma of web development, from then on I have never looked back. Now I spend my time playing golf, jamming music with some friends, chillaxing at the movies (my design inspiration) or sparking up the BBQ on a fine day with family & friends. <br> <br><strong style="font-style:italic; font-weight:lighter; font-size:0.8em;">"Life is not about what you know, but who you know that makes you successful"</strong>
+								<p style="width:100%; font-size: 20px;">I'm in my final year of a Bachelors degree at Media Design School. It all started back in 2009 when i graduated with a diploma of web development, from then on I have never looked back. Now I spend my time playing golf, jamming music with some friends, chillaxing at the movies (my design inspiration) or sparking up the BBQ on a fine day with family & friends. <br> <br><strong style="font-style:italic; font-weight:lighter; font-size:0.8em;">"Success does not come by what you know, it comes by who you know"</strong>
 
 								</p>
 
@@ -160,7 +165,7 @@
 					<article class="cbp-so-side cbp-so-side-left">
 						<h1 style="color:#47a3da;">cupcakes</h1>
 						<h2 style="margin-top:-28%;"><strong style="color:#7f7f7f;">El3phant</strong></h2>
-						<p class="show">I helped redesign El3phant's online presence that is functional to receive orders .. <strong style="font-weight:thin"><a class="readmore" style="color: #7f7f7f; font-weight:300;">more</strong><br></a><a class="hide">This website is currently under construction for launch 2017. They are good baking, specialised in making cupcakes<br><br><a href="projects/el3phant/index.html"target="_blank" title="MY RESUME"><button type="button">view profile</button></a></p>	
+						<p class="show">I helped redesign El3phant's online presence that is functional to receive orders .. <strong style="font-weight:thin"><a class="readmore" style="color: #7f7f7f; font-weight:300;">more</strong><br></a><a class="hide">This website is currently under construction for launch 2017. They are good at baking, specialised in making cupcakes<br><br><a href="projects/el3phant/index.html"target="_blank" title="MY RESUME"><button type="button">view profile</button></a></p>	
 					</article>
 					<figure class="cbp-so-side cbp-so-side-right">
 						<a href="projects/el3phant/index.html" target="_blank"><img src="images/3.png" alt="img01" style="width:50%; border-radius:10px; margin-top:15%;"></a>
@@ -178,7 +183,7 @@
 						<h1 style="color:#fff">fou</h1>
 						<h2 style="margin-top:-29%; color:#d9d9d9;">Music
 						<strong style="color:#d9d9d9;">download</strong></h2>
-						<p class="show">I released a compilation music album in 2016 comprised of previous and new releases .. <strong style="font-weight:thin"><a class="readmore" style="color: #ffac00; font-weight:300;">more</strong><br></a><a class="hide" style="color:#fff;">I wanted to create a simple website with images that link to existing social media and access to iTunes selling my music<br><br><a href="projects/fou/index.html"target="_blank" title="MY RESUME"><button type="button">view profile</button></a></p>	
+						<p class="show">I released a compilation music album in 2016 comprised of previous and new releases of my music <strong style="font-weight:thin"><a class="readmore" style="color: #ffac00; font-weight:300;">more</strong><br></a><a class="hide" style="color:#fff;">I wanted to create a simple website so that social media users can purchase my work on platforms such as iTunes and Bandcamp<br><br><a href="projects/fou/index.html"target="_blank" title="MY RESUME"><button type="button">view profile</button></a></p>	
 					</article>
 				</section>
 				<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#7f7f7f" preserveAspectRatio="none" style="position:absolute; margin-top:-242px">
@@ -217,10 +222,10 @@
 					<article class="cbp-so-side cbp-so-side-left" style="margin-top:-5%;">
 						<h1 style="color:#a72b63;"></h1>
 						<h2 style="margin-top:-29%; color:#7f7f7f;">Lets Work <strong style="color:#7f7f7f;">Together</strong></h2>
-						<p class="show">2017	
+						<p class="show"><!-- 2017 -->	
 							<div class="sm">
 								<div class="front-face">
-									<span class="text">UX Design</span>									
+									<!-- <span class="text">UX Design</span>									 -->
 								</div>
   								<form action="">
 										<div class="wrapper">
@@ -245,7 +250,7 @@
 						</p>							
 					</article>
 					<figure class="cbp-so-side cbp-so-side-right">
-						<a href="index.html#contact" target="_blank"><img src="" alt="GOOGLE MAP" style="border-radius:10px; width:50%;"></a>
+						<div id="map"></div>						
 					</figure>
 					<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" fill="#7f7f7f" preserveAspectRatio="none" style="position:absolute; margin-top:-242px">
                 <path d="M0 0 C 50 100 80 100 100 0 Z"/> <!-- ### section -->
@@ -255,7 +260,7 @@
 		</div>
 
 		<script src="js/vendor/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>		
 		
 		<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>			
 		<script src="js/classie.js"></script>
@@ -270,5 +275,24 @@
 			    $('#thumbnails a').lightBox();
 			});
 		</script>
+
+		<!-- Google Maps -->
+		<script>
+	      function initMap() {
+	        var uluru = {lat:-36.894517, lng: 174.696524};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 14,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqJFvCoLmpUS_sYn326rjYfNVP_w40KoI&callback=initMap">
+	    </script>
+
 	</body>
 </html>
