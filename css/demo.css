@@ -31,7 +31,7 @@ a {
 a:hover {	
 	color:#a72b63;
 }
-
+ 
 br{
 	margin-top:5px;
 }
@@ -1466,7 +1466,7 @@ article p{
 
 @media screen and (max-width: 640px){
 .containerHead {
-    margin: -46% auto;   
+    margin: -49.5% auto !important;   
 }
 
 #dogs article{
