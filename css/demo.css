@@ -41,7 +41,7 @@ br{
 }
   
 .container > header {	
-	position: relative;
+	position: relative; 
 	width: 100%;	
 	height:100vh;	 
 	position: relative;
@@ -54,7 +54,7 @@ br{
 /* Header Div */
 .containerHead{
 	position: absolute;	
-	margin:2% auto;
+	margin:-2% auto;
 	padding: 0 5% 0 5%;
 	width: 100%;
 	height:100vh;		
@@ -63,7 +63,7 @@ br{
 /* Logo */ 
 header img{  
 	position: relative;		
-	width:20%;
+	width:30%;
 	margin-top:20% !important;
 	margin-left: 40% !important;
 }
@@ -946,12 +946,18 @@ textarea {
 	height:100% !important;
 }
 
-article h2{
-	z-index: 500;
+.containerHead{
+	margin-top:3% !important;
 }
 
+/* Logo */ 
 header img{  	
-	width:25%;	
+	margin-left:34% !important;
+	width:40%;	
+}
+
+article h2{
+	z-index: 500;
 }
 
 #bio article{
@@ -1072,7 +1078,7 @@ header img{
 
 @media screen and (max-width: 768px) { 
 .containerHead {   
-    margin: -5% auto;  
+    margin: -10% auto !important;  
 }
 /* Social Icons*/
 header nav{			
@@ -1080,7 +1086,7 @@ header nav{
 }
 /* Logo */ 
 header img{  	
-	width:40%;
+	width:50% !important;
 	margin-top:60% !important;
 	margin-left: 30% !important;
 }
@@ -1597,16 +1603,17 @@ svg#circle {
 
 .containerHead {
     position: absolute !important;
-    margin: 40% auto !important;
+    margin-top: 40% !important;
+    margin-left:-1% !important;
     padding: 0 5% 0 5% !important;
     width: 100% !important;
     height: 100vh !important;
 }
 
 #home img{   
-  width:70% !important;
+  width:90% !important;
   margin-top:5% !important;
-  margin-left: 20% !important;  
+  margin-left: 14% !important;  
 } 
  
 /* submenu */
@@ -1933,14 +1940,14 @@ svg#circle {
 
 .containerHead{    
   margin-top: 40% !important;
-  margin-left:10px !important;
+  margin-left:15px !important;
   padding: 0 5% 0 5% !important;    
 }
 
 #home img{   
-  width:70% !important;
+  width:90% !important;
   margin-top:5% !important;
-  margin-left: 20% !important;  
+  margin-left: 13% !important;  
 } 
 
 header img{
